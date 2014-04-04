@@ -1,0 +1,27 @@
+{
+  "name": "passage-list",
+  "version": "0.0.1",
+  "description": "{{passage-list}} - Ember.js Component for Biblia's Scan/Parse API",
+  "homepage": "https://github.com/knownasilya/passage-list",
+  "authors": [
+    "Ilya Radchenko <ilya@burstcreations.com>"
+  ],
+  "main": "dist/passage-list.js",
+  "keywords": [
+    "biblia",
+    "bible",
+    "passage",
+    "verse",
+    "component",
+    "ember",
+    "emberjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

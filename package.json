@@ -1,0 +1,38 @@
+{
+  "name": "passage-list",
+  "version": "0.0.1",
+  "description": "{{passage-list}} - Ember.js Component for Biblia's Scan/Parse API",
+  "main": "dist/passage-list.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/knownasilya/passage-list.git"
+  },
+  "keywords": [
+    "biblia",
+    "bible",
+    "passage",
+    "verse",
+    "component",
+    "ember",
+    "emberjs"
+  ],
+  "author": "Ilya Radchenko <ilya@burstcreations.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knownasilya/passage-list/issues"
+  },
+  "homepage": "https://github.com/knownasilya/passage-list",
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "gulp-ember-handlebars": "^0.6.0",
+    "gulp": "^3.5.6",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-clean": "^0.2.4",
+    "gulp-wrap": "^0.3.0"
+  }
+}
