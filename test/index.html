@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>passage-list</title>
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
+  <script src="http://builds.emberjs.com/tags/v1.4.0/ember.js"></script>
+  <script src="passage-list.template.js"></script>
+  <script src="passage-list.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+  <!-- application.hbs template -->
+  <script type="text/x-handlebars">
+    {{passage-list source='My two favorite verses are Rom 8:1 and Heb 12:1-2.' apiKey='fd37d8f28e95d3be8cb4fbc37e15e18e'}}
+  </script>
+
+  <script>
+    var App = Ember.Application.create();
+  </script>
+  <script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

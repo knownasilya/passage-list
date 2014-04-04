@@ -5,6 +5,8 @@ var rename = require('gulp-rename');
 var clean = require('gulp-clean');
 var wrap = require('gulp-wrap');
 var handlebars = require('gulp-ember-handlebars');
+var livereload = require('gulp-livereload');
+var serve = require('gulp-serve');
 var name = 'passage-list';
 
 gulp.task('clean-dist', function () {
@@ -37,5 +39,17 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['clean-dist', 'templates', 'scripts']);
+gulp.task('serve', serve(['test', 'dist']));
 
+gulp.task('dev', function() {
+  var server = livereload();
+
+  gulp.start('default');
+  gulp.start('serve');
+  gulp.watch('src/*', ['default']);
+  gulp.watch('dist/*.js').on('change', function(file) {
+    server.changed(file.path);
+  });
+});
+
+gulp.task('default', ['clean-dist', 'templates', 'scripts']);
