@@ -1,6 +1,7 @@
 var PassageListComponent = Ember.Component.extend({
   tagName: 'ul',
   translation: 'ASV',
+  passageClass: 'label label-default',
   passages: Ember.A(),
   apiKey: null,
   source: null,
@@ -11,7 +12,7 @@ var PassageListComponent = Ember.Component.extend({
       params;
       
     if (source && apiKey) {
-      params =Ember.$.param({
+      params = Ember.$.param({
         text: source,
         key: apiKey
       });

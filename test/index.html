@@ -17,11 +17,23 @@
 
   <!-- application.hbs template -->
   <script type="text/x-handlebars">
-    {{passage-list source='My two favorite verses are Rom 8:1 and Heb 12:1-2.' apiKey='fd37d8f28e95d3be8cb4fbc37e15e18e'}}
+    {{passage-list source='My two favorite verses are Rom 8:1 and Heb 12:1-2.' apiKey='fd37d8f28e95d3be8cb4fbc37e15e18e' action='setText'}}
+
+    <p>
+      {{text}}
+    </p>
   </script>
 
   <script>
     var App = Ember.Application.create();
+
+    App.ApplicationController = Ember.Controller.extend({
+      actions: {
+        setText: function (text) {
+          this.set('text', text);
+        }
+      }
+    });
   </script>
   <script src="//localhost:35729/livereload.js"></script>
 </body>

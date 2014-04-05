@@ -46,7 +46,7 @@ gulp.task('dev', function() {
 
   gulp.start('default');
   gulp.start('serve');
-  gulp.watch('src/*', ['default']);
+  gulp.watch('src/*', ['templates', 'scripts']);
   gulp.watch('dist/*.js').on('change', function(file) {
     server.changed(file.path);
   });
