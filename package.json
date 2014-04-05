@@ -1,6 +1,6 @@
 {
   "name": "passage-list",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "{{passage-list}} - Ember.js Component for Biblia's Scan/Parse API",
   "main": "dist/passage-list.js",
   "scripts": {
