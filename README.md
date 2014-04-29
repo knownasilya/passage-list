@@ -1,7 +1,7 @@
 passage-list
 ================
 
-Ember Component for Bootstrap 3 Pagination &amp; Pager components
+Ember Component for parsing out Bible passages and getting back their text in a specific translation.
 
 ```hbs
 {{passage-list source='My favorite chapter is Rom 8' apiKey='df3gg4uuf'}}
