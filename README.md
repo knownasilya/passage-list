@@ -51,6 +51,7 @@ Install via Bower, `bower install passage-list --save`, then include in your pag
 - `passages` -- You can pass in a pre-parsed array of passages.
 - `translation` -- By default it's ASV, see [here][translations] for a list of available options.
 - `bibliaContentOptions` -- Override the default content options, see the [Biblia Content API][content-api]. 
+- `action` -- String of action name, action receives the text of the passage that's clicked on.
 
 [translations]: http://api.biblia.com/docs/Available_Bibles
 [content-api]: http://api.biblia.com/docs/Bible_Content
